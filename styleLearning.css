@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+:root{
+    --primary-color: #146c94;
+    --secondry-color: #19a7ce;
+    --text-color: #f6f1f1;
+}
+.navbar{
+    /* background-color: grey;
+    padding: 5%; */
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    align-items: center;
+    width: 100vw;
+    height:56px;
+    background:rgba(246,241,241, 0.8);
+    transition:0.3;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+
+
+}
+/* .nav{
+    display: flex;
+    align-items: center;
+} */
+
+.nav-scrolled-down{
+    /* height:80px; */
+    box-shadow: 0 10px 50px rgba(0,0,0,0.14);
+}
+
+.navlink{
+    display: flex;
+    gap: 16px;
+    transition: all 0.2s ease;
+
+}
+.navlink > li{
+    list-style: none;
+    /* padding: 0 5px; */
+    margin: 0 5px;  
+    color: var(--secondry-color);  
+    font-size: 18px;
+    cursor: pointer;
+    
+
+}
+.navlink li a{
+    text-decoration: none;
+    color: var(--primary-color); 
+}
+
+.navlink > li:hover{
+    text-decoration: underline;
+}
+.logo{
+    font-weight: bold;
+    font-size: 24px;
+    transform-origin: 0% 50%;
+    transition: 0.3s;
+    color: var(--primary-color);
+    /* font-family: 'Merienda One', cursive; */
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Poltawski Nowy', serif; */
+
+}
+.btn{
+    padding: 10px;
+    border:none;
+    font-size:14px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--secondry-color);
+    color: var(--text-color);
+    
+}
+.btn{
+    border: 3px solid #19a7ce  ;
+    background-color: var(--text-color);
+    color: var(--secondry-color);
+    
+}
+
+.btn:hover{
+    background-color: var(--secondry-color);
+    color: var(--text-color);
+
+}
+.navContainer{
+    margin: 0 10%;
+    width: 80%;
+
+}
+.navFlex{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+    
+}
+#particles-js {
+    
+    /* height: 100vh; */
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    
+}
+.pActivate{
+    font-weight: 600;
+    
+    text-decoration: underline !important;
+}
+.main-container{
+    }
+
+.logo > img{
+    height: 24px;
+        }
+
+
+.intro span {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+.footer{
+    background: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSub{
+    width: 80%;
+    padding:20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logoF{
+    font-weight: bold;
+    font-size: 24px;
+    transform-origin: 0% 50%;
+    transition: 0.3s;
+    font-family: 'Merienda One', cursive;
+    cursor: pointer;
+
+}
+.linksF{
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+    justify-content: space-around;
+    /* background-color: #fff; */
+}
+
+.linksF a{
+    filter: brightness(2000%) ;
+    /* height: 14px; */
+}
+.sclinksFF{ 
+    height: 30px;
+}
+
+/* Card container */
+    .custom-card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 10px;
+      color: #146c94;
+      padding: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    /* Card header */
+    .custom-card .card-header {
+      background-color: #e6e0e0;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    /* Card title */
+    .custom-card .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    /* Card body */
+    .custom-card .card-body {
+      font-size: 18px;
+      padding: 10px;
+    }
+    .custom-card .btn-primary {
+      font-size: 18px;
+      text-decoration: none;
+      color: #146c94;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .main-container{
+        background-color: var(--text-color);
+    }
+    .learningSubContainer{
+        padding: 100px 0;
+        margin: 0 10%  
+
+    }
+
+
+/* media query */
+@media (max-width:920px){
+    .nav{
+
+        display: none;
+        position: absolute;
+        top:100%;
+        right: 0;
+        background-color:rgba(246,241,241, 0.8);
+        /* color: var(--text-color); */
+        /* display: flex; */
+        flex-direction: column;
+
+        width: 170px;
+        height: 150px;
+        /* display: none; */
+        justify-content: flex-start;
+        border-radius: 0px 0px 10px 10px;
+        transition:all 0.5s ease;
+        box-shadow: 0 50px 50px rgba(0,0,0,0.14);
+    }
+    .nav > li > a{
+        color: var(--primary-color);
+        padding: 0px 25px;
+        backdrop-filter: blur(20px);
+        /* margin: 12px 0; */
+    }
+    .nav > li > a:hover{
+        text-decoration: underline;
+    }
+
+    .nav.open{
+        display: flex;
+    }
+    #menu-icon {display:block;}
+
+}
+
+@media screen and (max-width: 600px){
+
+    .introContainer{
+    height:100vh;
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    z-index: 4;
+        }
+        .subContainer{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            z-index: 4;
+
+
+        }
+        .intro{
+            color: var(--primary-color);
+            font-size: 50px;
+            margin-left: 25px;
+        }
+
+        .displayPicture {
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            height: 310px;
+            width: 310px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        .img{
+            
+            height: 300px;
+            width:300px;
+            border-radius:50%;
+
+        }
+        .status{
+            font-size:18px;
+        }
+        .intro span {
+        overflow: hidden;
+        width: 0;
+        white-space: wrap;
+        
+
+        }
+
+        /* skill section start*/
+        .skillContainer{
+            /* margin-top: 20px; */
+            display: flex;
+            overflow: scroll;
+            justify-content: center;
+            padding: 0;    
+            box-shadow: -1rem 0 3rem #000;
+            
+        }
+        .skills{
+            padding:15px 0;
+        }
+        
+        .skillImg{
+            transform: translateX(-20%);
+        }
+        /* skill card section END */
+        .linksF{
+            width: 150px;
+        }
+    }
+
