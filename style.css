@@ -134,6 +134,33 @@
     justify-content: center;
     z-index: 4;
 }
+
+
+/*scroll down start  */
+ .scrollDown{
+    display: none;
+    color: var(--primary-color);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 4rem;
+    color: rgb(246, 246, 246);
+    animation: 2.35s linear 0s infinite normal none running dWdPsP;
+    user-select: none;
+    position: absolute;
+    bottom: 20px;
+        }
+    .scrollDown > span{
+        color: var(--primary-color);
+    }
+        @keyframes dWdPsP{
+            50% {
+                transform: translateY(0.5rem);
+                }
+        }
+/* scroll down end */
+
 .subContainer{
     display:flex;
     align-items:center;
@@ -483,6 +510,10 @@ svg {
 
 /* media query */
 @media (max-width:920px){
+
+     .scrollDown{
+        display: flex;
+    }
     .nav{
 
         display: none;
