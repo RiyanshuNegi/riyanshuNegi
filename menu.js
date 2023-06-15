@@ -24,6 +24,12 @@ document.addEventListener("scroll", onScroll);
 let nav = document.querySelector(".nav");
 let menu = document.querySelector("#menu-icon");
 let btn = document.querySelector(".btn");
+let logo = document.querySelector(".imglogo");
+
+logo.onclick = () => {
+    window.location.href = "./index.html";
+    
+}
 
 // link
 
