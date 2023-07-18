@@ -640,3 +640,10 @@ svg {
         }
        
     }
+
+.generativeai{
+    cursor:pointer;
+}
+.generativeai:hover{
+    transform: translatey(1px);
+}

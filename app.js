@@ -36,16 +36,21 @@ btn.onclick = () => {
 
 
 githubLink.onclick = () => {
-    window.location.href = "https://github.com/RiyanshuNegi";
+    window.open("https://github.com/RiyanshuNegi", "_blank"); ;
 }
 linkedLink.onclick = () => {
-    window.location.href = "https://in.linkedin.com/in/riyanshu-negi-730a";
+    window.open("https://in.linkedin.com/in/riyanshu-negi-730a", "_blank"); ;
 }
 emailLink.onclick = () => {
-    window.location.href = "mailto:riyanshunegi66@gmail.com";
+    window.open("mailto:riyanshunegi66@gmail.com", "_blank");
 }
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     nav.classList.toggle('open');
+}
+
+const generativeLink = document.querySelector(".generativeai");
+generativeLink.onclick=()=>{
+    window.open("https://generativeai.netlify.app/", "_blank");
 }
