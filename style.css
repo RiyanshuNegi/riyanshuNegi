@@ -172,6 +172,7 @@
     color: var(--primary-color);
     font-size: 50px;
     margin-left: 25px;
+    width: min-content;
 }
  .introAbout{
             height: 90vh;
@@ -196,7 +197,7 @@
     font-size:18px;
 }
 .LStatus{
-    width:50%;
+    /* width:50%; */
     font-size:20px;
 }
 
